@@ -2,6 +2,7 @@
 name: Check building the docker image and possibly push
 
 on:
+  workflow_dispatch:
   pull_request:
     branches: [main]
 
