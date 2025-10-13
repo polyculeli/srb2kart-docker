@@ -16,6 +16,10 @@ if [ -n "$PACKETSIZE" ]; then
     PACKETSIZE="-packetsize $PACKETSIZE"
 fi
 
+if [ -n "$PASSWORD" ]; then
+    PASSWORD="-password $PASSWORD"
+fi
+
 if [ -n "$SERVERPORT" ]; then
     SERVERPORT="-serverport $SERVERPORT"
 fi

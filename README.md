@@ -43,7 +43,7 @@ This folder is mapped as a volume at `/data` and holds general game data, and co
 To run the server normally with docker, just execute
 
 ```sh
-docker run -it --name srb2kart -v /path/on/host/addons:/addons -v /path/on/host/data:/data -e ROOM_ID=33 -p 5029:5029/udp aliciabytes/srb2kart:latest
+docker run -it --name srb2kart -v /path/on/host/addons:/addons -v /path/on/host/data:/data -e ROOM_ID=33 -p 5029:5029/udp alicianibbles/srb2kart:latest
 ```
 
 ## Running With Docker Compose
