@@ -1,4 +1,4 @@
-FROM debian:13.1-slim AS builder
+FROM debian:13.2-slim AS builder
 
 # See: https://github.com/STJr/Kart-Public/releases
 ARG SRB2KART_VERSION=1.6
@@ -35,7 +35,7 @@ WORKDIR /srb2kart/src
 RUN make -j"$(nproc)" LINUX64=1 NOUPX=1 \
     && ls /srb2kart/bin/Linux64/Release/lsdl2srb2kart
 
-FROM debian:13.1-slim AS finished
+FROM debian:13.2-slim AS finished
 
 ENV PASSWORD=
 ENV BANDWIDTH=
